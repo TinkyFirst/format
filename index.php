@@ -27,129 +27,129 @@
 ?>
 
 <? if($post_id): ?>
-    <section
-            class='info-wrapper inner'
+	<section
+			class='info-wrapper inner'
 		<? if($section_id): ?>
-            id='<?= $section_id; ?>'
+			id='<?= $section_id; ?>'
 		<? endif; ?>
-    >
+	>
 
-        <div class='row'>
+		<div class='row'>
 
-            <h5>
+			<h5>
 				<?= $name_information; ?>
-            </h5>
+			</h5>
 
-            <table>
+			<table>
 
 				<? if($website): ?>
-                    <tr>
-                        <th>
+					<tr>
+						<th>
 							<?= $name_website; ?>
-                        </th>
-                        <td>
+						</th>
+						<td>
 							<?= $website; ?>
-                        </td>
-                    </tr>
+						</td>
+					</tr>
 				<? endif; ?>
 
 				<? if($year_launched): ?>
-                    <tr>
-                        <th>
+					<tr>
+						<th>
 							<?= $name_year_launched; ?>
-                        </th>
-                        <td>
+						</th>
+						<td>
 							<?= $year_launched; ?>
-                        </td>
-                    </tr>
+						</td>
+					</tr>
 				<? endif ?>
 
 				<? if($license): ?>
-                    <tr>
-                        <th>
+					<tr>
+						<th>
 							<?= $name_license; ?>
-                        </th>
-                        <td>
+						</th>
+						<td>
 							<?= $license; ?>
-                        </td>
-                    </tr>
+						</td>
+					</tr>
 				<? endif; ?>
 
 				<? if($number_of_games): ?>
-                    <tr>
-                        <th>
+					<tr>
+						<th>
 							<?= $name_number_of_games; ?>
-                        </th>
-                        <td>
+						</th>
+						<td>
 							<?= $number_of_games; ?>
-                        </td>
-                    </tr>
+						</td>
+					</tr>
 				<? endif; ?>
 
 				<? if($bonus_value): ?>
-                    <tr>
-                        <th>
+					<tr>
+						<th>
 							<?= $name_bonus_value; ?>
-                        </th>
-                        <td>
+						</th>
+						<td>
 							<?= $bonus_value; ?>
-                        </td>
-                    </tr>
+						</td>
+					</tr>
 				<? endif; ?>
 
 				<? if($min_deposit_required): ?>
-                    <tr>
-                        <th>
+					<tr>
+						<th>
 							<?= $name_min_deposit_required; ?>
-                        </th>
-                        <td>
+						</th>
+						<td>
 							<?= $min_deposit_required; ?>
-                        </td>
-                    </tr>
+						</td>
+					</tr>
 				<? endif; ?>
 
 				<? if($withdrawal_speed_avg): ?>
-                    <tr>
-                        <th>
+					<tr>
+						<th>
 							<?= $name_withdrawal_speed_avg; ?>
-                        </th>
-                        <td>
+						</th>
+						<td>
 							<?= $withdrawal_speed_avg; ?>
-                        </td>
-                    </tr>
+						</td>
+					</tr>
 				<? endif; ?>
 
 				<? if($casino_rtp): ?>
-                    <tr>
-                        <th>
+					<tr>
+						<th>
 							<?= $name_casino_rtp; ?>
-                        </th>
-                        <td>
+						</th>
+						<td>
 							<?= $casino_rtp; ?>
-                        </td>
-                    </tr>
+						</td>
+					</tr>
 				<? endif; ?>
 
-            </table>
-        </div>
+			</table>
+		</div>
 
 		<? if($payment_methods_ids): ?>
-            <div class='row'>
-                <h5>
+			<div class='row'>
+				<h5>
 					<?= $name_payments; ?>
-                </h5>
+				</h5>
 				<? include get_theme_file_path('template-parts/payment-methods/index.php'); ?>
-            </div>
+			</div>
 		<? endif; ?>
 
 		<? if($game_providers_ids): ?>
-            <div class='row'>
-                <h5>
+			<div class='row'>
+				<h5>
 					<?= $name_game_providers; ?>
-                </h5>
+				</h5>
 				<? include get_theme_file_path('template-parts/game-providers/index.php'); ?>
-            </div>
+			</div>
 		<? endif; ?>
 
-    </section>
+	</section>
 <? endif; ?>

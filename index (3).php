@@ -28,7 +28,7 @@
 
 <? if($post_id): ?>
 	<section
-		class='info-wrapper inner'
+			class='info-wrapper inner'
 		<? if($section_id): ?>
 			id='<?= $section_id; ?>'
 		<? endif; ?>
